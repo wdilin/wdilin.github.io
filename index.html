@@ -41,21 +41,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="psf_stop()" onmouseover="psf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-                <p></p>
-                <div class="one">
-                <div class="two" id='psf_image'><img src='images/psf.png' width="110%"></div>
-                <img src='images/psf.png' width="110%">
-                </div>
-                <script type="text/javascript">
-                function psf_start() {
-                    document.getElementById('psf_image').style.opacity = "1";
-                }
-
-                function psf_stop() {
-                    document.getElementById('psf_image').style.opacity = "0";
-                }
-                psf_stop()
-                </script>
+              <img src='images/psf.png' width="110%">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
                             <a target="_blank" href="https://arxiv.org/abs/2212.01747">
@@ -72,180 +58,82 @@
                 <!-- <p>An one-step diffusion model for point cloud generation with straight flows.</p> -->
             </td>
           </tr>
-          <tr onmouseout="photoscene_stop()" onmouseover="photoscene_start()">
+          <tr onmouseout="nasvit_stop()" onmouseover="nasvit_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='photoscene_image'><img src='images/photoscene.gif' width="110%"></div>
-                <img src='images/photoscene.jpg' width="110%">
-              </div>
-              <script type="text/javascript">
-                function photoscene_start() {
-                  document.getElementById('photoscene_image').style.opacity = "1";
-                }
-
-                function photoscene_stop() {
-                  document.getElementById('photoscene_image').style.opacity = "0";
-                }
-                photoscene_stop()
-              </script>
+             <img src='images/nasvit.png' width="110%">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-							<a target="_blank" href="https://yuyingyeh.github.io/projects/photoscene.html">
-                <papertitle>PhotoScene: Photorealistic Material and Lighting Transfer for Indoor Scenes</papertitle>
+							<a target="_blank" href="https://openreview.net/pdf?id=Qaw16njk6L">
+                <papertitle>Nasvit: Neural architecture search for efficient vision transformers with gradient conflict aware supernet training</papertitle>
               </a>
               <br>
-              <strong>Yu-Ying Yeh</strong>,  
-              <a target="_blank" href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, 
-              <a target="_blank" href="https://yannickhold.com/">Yannick Hold-Geoffroy</a>, 
-              <a target="_blank" href="https://jerrypiglet.github.io/">Rui Zhu</a>, 
-              <a target="_blank" href="https://cseweb.ucsd.edu/~zex014/">Zexiang Xu</a>, <br>
-              <a target="_blank" href="http://www.miloshasan.net/">Miloš Hašan</a>, 
-              <a target="_blank" href="http://www.kalyans.org/">Kalyan Sunkavalli</a>, 
-              <a target="_blank" href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>
+              Chengyue Gong, <strong>Dilin Wang</strong>, Meng Li, Xinlei Chen, Zhicheng Yan, Yuandong Tian, Vikas Chandra
               <br>
-              <em>CVPR</em>, 2022  
+              <em>ICLR</em>, 2022  
               <br>
-              <a target="_blank" href="https://yuyingyeh.github.io/projects/photoscene.html">project page</a> / 
-              <a target="_blank" href="http://arxiv.org/abs/2207.00757">arXiv</a> /
-              <a target="_blank" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Yeh_PhotoScene_Photorealistic_Material_and_Lighting_Transfer_for_Indoor_Scenes_CVPR_2022_paper.pdf">cvpr paper</a> / 
-              <a target="_blank" href="https://github.com/ViLab-UCSD/PhotoScene">code</a>
+              <a target="_blank" href="https://openreview.net/pdf?id=Qaw16njk6L">paper</a> /
+              <a target="_blank" href="https://github.com/facebookresearch/NASViT">code</a>
               <p></p>
-              <p>Transfer high-quality procedural materials and lightings from images to reconstructed indoor scene 3D geometry, which enables photorealistic 3D content creation for digital twins.</p>
             </td>
           </tr>
           
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/openrooms_teaser.png' width="110%">
+                <img src='images/alphanet.png' width="110%">
               </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-                <a target="_blank" href="https://vilab-ucsd.github.io/ucsd-openrooms/">
-                <papertitle>OpenRooms: An Open Framework for Photorealistic Indoor Scene Datasets</papertitle>
+                <a target="_blank" href="http://proceedings.mlr.press/v139/wang21i/wang21i.pdf">
+                <papertitle>AlphaNet: Improved Training of Supernets with Alpha-Divergence</papertitle>
               </a>
               <br>
-              <a target="_blank" href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, 
-              Ting-Wei Yu, Shen Sang, Sarah Wang, 
-              <a target="_blank" href="https://sites.google.com/site/mengsong1130/">Meng Song</a>, 
-              Yuhan Liu, 
-              <strong>Yu-Ying Yeh</strong>, <br>
-              <a target="_blank" href="https://jerrypiglet.github.io/">Rui Zhu</a>, 
-              <a target="_blank" href="https://scholar.google.com/citations?user=v19p_0oAAAAJ&hl=en">Nitesh Gundavarapu</a>, 
-              Jia Shi, 
-              <a target="_blank" href="https://sai-bi.github.io/">Sai Bi</a>, 
-              <a target="_blank" href="https://cseweb.ucsd.edu/~zex014/">Zexiang Xu</a>, 
-              <a target="_blank" href="https://kovenyu.com/">Hong-Xing Yu</a>, 
-              <a target="_blank" href="http://www.kalyans.org/">Kalyan Sunkavalli</a>, 
-              <a target="_blank" href="http://www.miloshasan.net/">Miloš Hašan</a>, 
-              <a target="_blank" href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
-              <a target="_blank" href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>
+              <strong>Dilin Wang</strong>, Chengyue Gong, Meng Li, Qiang Liu, Vikas Chandra
               <br>
-				<em>CVPR</em>, 2021 &nbsp <font color=#d0176d><strong>(Oral Presentation)</strong></font>
+				<em>ICML</em>, 2021 &nbsp <font color=#d0176d><strong>(Long Talk 166/5513=3%)</strong></font>
               <br>
-                <a target="_blank" href="https://vilab-ucsd.github.io/ucsd-openrooms/">project page</a> / 
-                <a target="_blank" href="https://arxiv.org/pdf/2007.12868.pdf">arXiv</a> 	
+                <a target="_blank" href="https://arxiv.org/abs/2102.07954">arxiv</a> / 
+                <a target="_blank" href="https://github.com/facebookresearch/AlphaNet">code</a> 	
               <p></p>
-              <p>An open framework which creates a large-scale photorealistic indoor scene dataset OpenRooms from a publicly available video scans dataset ScanNet.</p>
             </td>
           </tr>
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/cvpr20_teaser.png' width="110%">
+                <img src='images/f_div.png' width="110%">
               </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-							<a target="_blank" href="https://cseweb.ucsd.edu//~viscomp/projects/CVPR20Transparent/">
-                <papertitle>Through the Looking Glass: Neural 3D Reconstruction of Transparent Shapes</papertitle>
+							<a target="_blank" href="https://proceedings.neurips.cc/paper/2018/file/1cd138d0499a68f4bb72bee04bbec2d7-Paper.pdf">
+                <papertitle>Variational inference with tail-adaptive f-divergence</papertitle>
               </a>
               <br>
-              <strong>Yu-Ying Yeh</strong><sup>*</sup>,  
-              <a target="_blank" href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a><sup>*</sup>, 
-              <a target="_blank" href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a> (*equal contributions)
+              <strong>Dilin Wang</strong>, Hao Liu, Qiang Liu
               <br>
-				<em>CVPR</em>, 2020 &nbsp <font color=#d0176d><strong>(Oral Presentation)</strong></font>
+				<em>NeurIPS</em>, 2018 &nbsp <font color=#d0176d><strong>(Oral Presentation 30/4856=0.6%)</strong></font>
               <br>
-                <a target="_blank" href="https://cseweb.ucsd.edu//~viscomp/projects/CVPR20Transparent/">project page</a> / 
-                <a target="_blank" href="https://arxiv.org/abs/2004.10904">arXiv</a> / 
-                <a target="_blank" href="https://github.com/lzqsd/TransparentShapeReconstruction">code</a> / 
-                <a target="_blank" href="https://github.com/lzqsd/TransparentShapeDataset">dataset</a> /
-                <a target="_blank" href="https://github.com/yuyingyeh/TransparentShapeRealData">real data</a> 			
+                <a target="_blank" href="https://arxiv.org/abs/1810.11943">arXiv</a>		
               <p></p>
-              <p>Transparent shape reconstruction from multiple images captured from a mobile phone.</p>
             </td>
           </tr>
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/Video_Completion.png' width="110%">
+              <img src='images/svgd.gif' width="110%">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9099414">
-                <papertitle>Static2Dynamic: Video Inference from a Deep Glimpse</papertitle>
+              <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2016/file/b3ba8f1bee1238a2f37603d90b58898d-Paper.pdf">
+                <papertitle>Stein variational gradient descent: A general purpose bayesian inference algorithm</papertitle>
               </a>
               <br>              
-              <strong>Yu-Ying Yeh</strong>, 
-              <a target="_blank" href="https://ycliu93.github.io/">Yen-Cheng Liu</a>, 
-              <a target="_blank" href="https://walonchiu.github.io/">Wei-Chen Chiu</a>, 
-              <a target="_blank" href="https://scholar.google.com/citations?user=HSGvdtoAAAAJ&hl=en" >Yu-Chiang Frank Wang</a>
+              Qiang Liu, <strong>Dilin Wang</strong>
               <br>
-				<em>IEEE Transactions on Emerging Topics in Computational Intelligence</em>, 2020
+				<em>NIPS</em>, 2016
               <br>
-              <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9099414">paper</a> /
-              <a target="_blank" href="data/yeh2020static2dynamic.bib">bibtex</a>
+              <a target="_blank" href="https://arxiv.org/abs/1608.04471">paper</a> /
+              <a target="_blank" href="https://github.com/dilinwang820/Stein-Variational-Gradient-Descent">code</a>
               <p></p>
-              <p>Video generation, interpolation, inpainting and prediction given a set of anchor frames.</p>
             </td>
           </tr>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/UFDN.png' width="110%">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a target="_blank" href="https://arxiv.org/abs/1809.01361">
-                <papertitle>A Unified Feature Disentangler for Multi-Domain Image Translation and Manipulation</papertitle>
-              </a>
-              <br>              
-              <a target="_blank" href="https://alexander-h-liu.github.io/">Alexendar Liu</a>, 
-              <a target="_blank" href="https://ycliu93.github.io/">Yen-Cheng Liu</a>, 
-              <strong>Yu-Ying Yeh</strong>, 
-              <a target="_blank" href="https://scholar.google.com/citations?user=HSGvdtoAAAAJ&hl=en" >Yu-Chiang Frank Wang</a>
-              <br>
-				<em>NeurIPS</em>, 2018
-              <br>
-              <a target="_blank" href="https://arxiv.org/abs/1809.01361">arXiv</a> /
-              <a target="_blank" href="data/liu2018unified.bib">bibtex</a> /
-              <a target="_blank" href="https://github.com/Alexander-H-Liu/UFDN">code</a>
-              <p></p>
-              <p>A novel and unified deep learning framework which is capable of learning domain-invariant representation from data across multiple domains.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/CDRD.png' width="110%">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a target="_blank" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Liu_Detach_and_Adapt_CVPR_2018_paper.pdf">
-                <papertitle>Detach and Adapt: Learning Cross-Domain Disentangled Deep Representation</papertitle>
-              </a>
-              <br>
-              <a target="_blank" href="https://ycliu93.github.io/">Yen-Cheng Liu</a>, 
-              <strong>Yu-Ying Yeh</strong>, 
-              Tzu-Chien Fu, 
-              <a target="_blank" href="https://walonchiu.github.io/">Wei-Chen Chiu</a>, <br>
-              Sheng-De Wang, 
-              <a target="_blank" href="https://scholar.google.com/citations?user=HSGvdtoAAAAJ&hl=en" >Yu-Chiang Frank Wang</a>
-              <br>
-				<em>CVPR</em>, 2018 &nbsp <font color=#d0176d><strong>(Spotlight Presentation)</strong></font>
-              <br>
-              <a target="_blank" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Liu_Detach_and_Adapt_CVPR_2018_paper.pdf">paper</a> /
-              <a target="_blank" href="data/liu2018detach.bib">bibtex</a> /
-              <a target="_blank" href="https://github.com/ycliu93/CDRD">code</a> /
-              <a target="_blank" href="https://youtu.be/sIkUzmgUaxc?t=4148">presentation</a>
-              <p></p>
-              <p>Feature disentanglement for cross-domain data which enables image translation and manipulation from labeled source doamin to unlabeled target domain.</p>
-            </td>
-          </tr>
+      
 
         </tbody></table>
 
