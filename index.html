@@ -39,43 +39,37 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="lumos_stop()" onmouseover="lumos_start()">
+          <tr onmouseout="psf_stop()" onmouseover="psf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
+                <p></p>
                 <div class="one">
-                <div class="two" id='lumos_image'><img src='images/lumos.jpeg' width="110%"></div>
-                <img src='images/lumos.jpeg' width="110%">
+                <div class="two" id='psf_image'><img src='images/psf.png' width="110%"></div>
+                <img src='images/psf.png' width="110%">
                 </div>
                 <script type="text/javascript">
-                function lumos_start() {
-                    document.getElementById('lumos_image').style.opacity = "1";
+                function psf_start() {
+                    document.getElementById('psf_image').style.opacity = "1";
                 }
 
-                function lumos_stop() {
-                    document.getElementById('lumos_image').style.opacity = "0";
+                function psf_stop() {
+                    document.getElementById('psf_image').style.opacity = "0";
                 }
-                lumos_stop()
+                psf_stop()
                 </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-                            <a target="_blank" href="https://research.nvidia.com/labs/dir/lumos/">
-                <papertitle>Learning to Relight Portrait Images via a Virtual Light Stage and Synthetic-to-Real Adaptation</papertitle>
+                            <a target="_blank" href="https://arxiv.org/abs/2212.01747">
+                <papertitle>Fast Point Cloud Generation with Straight Flows</papertitle>
                 </a>
                 <br>
-                <strong>Yu-Ying Yeh</strong>,  
-                <a target="_blank" href="https://luminohope.org/">Koki Nagano</a>, 
-                <a target="_blank" href="https://www.samehkhamis.com/">Sameh Khamis</a>, 
-                <a target="_blank" href="https://jankautz.com/">Jan Kautz</a>, 
-                <a target="_blank" href="http://mingyuliu.net/">Ming-Yu Liu</a>,
-                <a target="_blank" href="https://tcwang0509.github.io/">Ting-Chun Wang</a>
+                Lemeng Wu, <strong>Dilin Wang</strong>, Chengyue Gong, Xingchao Liu, Yunyang Xiong, Rakesh Ranjan, Raghuraman Krishnamoorthi, Vikas Chandra, Qiang Liu
                 <br>
-                <em>SIGGRAPH Asia</em>, 2022  
+                <em>CVPR</em>, 2023  
                 <br>
-                <a target="_blank" href="https://research.nvidia.com/labs/dir/lumos/">project page</a> / 
-                <a target="_blank" href="https://arxiv.org/abs/2209.10510">arxiv</a> / 
-                <a target="_blank" href="https://youtu.be/uWSVpG0eKbU">video</a>
-                <!-- <a target="_blank" href="http://imaginaire.cc/Lumos/">demo</a> -->
+                <a target="_blank" href="https://arxiv.org/pdf/2212.01747.pdf">arxiv</a> / 
+                <a target="_blank" href="#">code</a>
                 <p></p>
-                <p>We propose a single-image portrait relighting method trained with our rendered dataset and synthetic-to-real adaptation to achieve high photorealism without using light stage data. Our method can also handle eyeglasses and support video relighting.</p>
+                <!-- <p>An one-step diffusion model for point cloud generation with straight flows.</p> -->
             </td>
           </tr>
           <tr onmouseout="photoscene_stop()" onmouseover="photoscene_start()">
