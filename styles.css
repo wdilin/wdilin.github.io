@@ -1,0 +1,250 @@
+:root {
+  color-scheme: light;
+  --bg: #fafbfc;
+  --paper: #ffffff;
+  --heading: #171a1f;
+  --text: #343a40;
+  --muted: #68717d;
+  --nav: #4d5661;
+  --divider-text: #aab1ba;
+  --line: #dfe3e8;
+  --line-soft: #f0f2f5;
+  --link: #1f5f83;
+  --link-hover: #113d59;
+  --accent: #7c3b35;
+  --project-link: #205a75;
+  --max-width: 820px;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, #ffffff 0, var(--bg) 360px),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.68;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(250, 251, 252, 0.92);
+  backdrop-filter: blur(10px);
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  width: min(var(--max-width), calc(100% - 32px));
+  min-height: 56px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--nav);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.nav a.active {
+  color: var(--accent);
+}
+
+.page {
+  width: min(var(--max-width), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 64px 0 54px;
+}
+
+.intro {
+  position: relative;
+  min-height: 360px;
+  margin-bottom: 64px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  max-width: 650px;
+  margin-bottom: 12px;
+  color: var(--heading);
+  font-family: var(--font-display);
+  font-size: 3.15rem;
+  font-weight: 720;
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin: 0 0 28px;
+  color: var(--heading);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 720;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+h3 {
+  margin-bottom: 3px;
+  color: var(--heading);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.profile {
+  float: right;
+  width: 190px;
+  margin: 5px 0 22px 38px;
+}
+
+.profile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  box-shadow: 0 10px 28px rgba(30, 45, 60, 0.08);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
+  margin-top: 16px;
+  font-size: 0.96rem;
+}
+
+.links span {
+  color: var(--divider-text);
+}
+
+.section {
+  clear: both;
+}
+
+.section + .section {
+  margin-top: 78px;
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: 178px minmax(0, 1fr);
+  gap: 30px;
+  align-items: start;
+  padding: 0;
+}
+
+.work-item + .work-item {
+  margin-top: 36px;
+}
+
+h2 + .work-item {
+  padding-top: 4px;
+}
+
+.work-item h3 {
+  margin: 0;
+  font-size: 1.18rem;
+}
+
+.work-item h3 a {
+  color: var(--project-link);
+}
+
+.work-item h3 a:hover {
+  color: var(--link-hover);
+}
+
+.work-item p {
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  padding: 0;
+}
+
+.news-item + .news-item {
+  margin-top: 28px;
+}
+
+.news-item time {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.news-item p {
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+.scholar-note {
+  margin-top: 30px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.contact p {
+  margin-bottom: 0;
+}
+
+.footer {
+  width: min(var(--max-width), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 26px 0 28px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 15.5px;
