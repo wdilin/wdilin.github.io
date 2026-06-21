@@ -248,3 +248,67 @@ h2 + .work-item {
 @media (max-width: 700px) {
   body {
     font-size: 15.5px;
+  }
+
+  .nav {
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 52px;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  .page {
+    padding-top: 34px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin-bottom: 42px;
+    padding-bottom: 0;
+  }
+
+  h1 {
+    order: 1;
+    font-size: 2.42rem;
+  }
+
+  .profile {
+    order: 2;
+    float: none;
+    width: min(210px, 72vw);
+    margin: 0 0 26px;
+  }
+
+  .intro > p:not(.links) {
+    order: 3;
+  }
+
+  .links {
+    order: 4;
+  }
+
+  .work-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .section + .section {
+    margin-top: 54px;
+  }
+
+  h2 {
+    margin-bottom: 22px;
+    font-size: 1.04rem;
+  }
+
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 16px 0;
+  }
+}
